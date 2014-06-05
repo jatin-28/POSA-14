@@ -89,9 +89,9 @@ public class PingPongRight {
              */
 
             // TODO - You fill in here.
-            for(int i = 0; i < mMaxIterations; i++) {
+            for(int i = 1; i < mMaxIterations + 1; i++) {
                 acquire();
-                String output = String.format("%s (%d)", stringToPrint, i);
+                String output = String.format("%s(%d)", stringToPrint, i);
                 System.out.println(output);
                 release();
             }
@@ -135,7 +135,8 @@ public class PingPongRight {
         // TODO - You fill in here, make pingSema start out unlocked.
         SimpleSemaphore pingSema = new SimpleSemaphore(1, true);
         // TODO - You fill in here, make pongSema start out locked.
-        SimpleSemaphore pongSema = new SimpleSemaphore(0, true);
+        SimpleSemaphore pongSema = new SimpleSemaphore(1, true);
+        pongSema.acquire();
 
         System.out.println(startString);
 
