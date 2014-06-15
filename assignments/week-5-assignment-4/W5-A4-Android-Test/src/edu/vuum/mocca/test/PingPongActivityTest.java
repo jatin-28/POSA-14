@@ -4,10 +4,9 @@ import android.content.Context;
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.robotium.solo.Solo;
-
 import edu.vuum.mocca.PingPongActivity;
+
 
 /**
  * @class PingPongActivityTest
