@@ -48,9 +48,6 @@ University of Maryland to appear in their names.
 
 package edu.vuum.mocca.ui;
 
-import java.util.Calendar;
-import java.util.Locale;
-
 import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
@@ -62,16 +59,15 @@ import android.os.RemoteException;
 import android.text.Editable;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import edu.vuum.mocca.R;
 import edu.vuum.mocca.storage.MoocResolver;
 import edu.vuum.mocca.storage.StorageUtilities;
 import edu.vuum.mocca.storage.StoryCreator;
 import edu.vuum.mocca.storage.StoryData;
+
+import java.util.Calendar;
+import java.util.Locale;
 
 /**
  * The activity that allows a user to create and save a story.
