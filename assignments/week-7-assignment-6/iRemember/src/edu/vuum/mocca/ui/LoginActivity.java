@@ -1,10 +1,5 @@
 package edu.vuum.mocca.ui;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.util.Scanner;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +7,11 @@ import android.view.View;
 import android.widget.EditText;
 import edu.vuum.mocca.R;
 import edu.vuum.mocca.storage.StorageUtilities;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.util.Scanner;
 
 /**
  * The activity that allows the user to provide login information.
@@ -47,7 +47,7 @@ public class LoginActivity extends StoryActivityBase{
 	public static File getLoginFile (Context context) {
 		return StorageUtilities.getOutputMediaFile(context, 	// Line 48
 				StorageUtilities.MEDIA_TYPE_TEXT, 
-				MAX_SECURITY, 
+				StorageUtilities.SECURITY_PRIVATE,
 				"login.txt");
 	}
 	
