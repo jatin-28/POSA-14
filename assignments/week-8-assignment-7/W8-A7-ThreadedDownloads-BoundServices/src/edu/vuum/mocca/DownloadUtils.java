@@ -1,18 +1,12 @@
 package edu.vuum.mocca;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URL;
-
-import edu.vuum.mocca.R;
-
 import android.content.Context;
 import android.net.Uri;
 import android.util.Base64;
 import android.util.Log;
+
+import java.io.*;
+import java.net.URL;
 
 /**
  * @class DownloadUtils
@@ -34,7 +28,7 @@ public class DownloadUtils {
     */
     // TODO - You can change this to the appropriate setting for your
     // environment.
-    static final boolean DOWNLOAD_OFFLINE = true;
+    static final boolean DOWNLOAD_OFFLINE = false;
     
     /**
      * The resource that we write to the file system in offline
